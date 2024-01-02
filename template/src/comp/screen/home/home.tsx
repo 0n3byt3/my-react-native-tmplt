@@ -5,8 +5,8 @@
  * @format
  */
 //external dependencies
-import type { PropsWithChildren } from 'react';
-import React, { memo } from 'react';
+import type {PropsWithChildren} from 'react';
+import React, {memo} from 'react';
 import {
   SafeAreaView,
   ScrollView,
@@ -57,7 +57,7 @@ function Section({children, title}: TSectionProps): React.JSX.Element {
     </View>
   );
 }
-
+//TODO add desc of used packages
 export const HomeScreen = memo(() => {
   const isDarkMode = useColorScheme() === 'dark';
 
@@ -97,7 +97,7 @@ export const HomeScreen = memo(() => {
       </ScrollView>
     </SafeAreaView>
   );
-}); 
+});
 
 const styles = StyleSheet.create({
   sectionContainer: {
