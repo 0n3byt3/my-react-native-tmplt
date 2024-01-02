@@ -1,3 +1,23 @@
 {
-  "extends": "@react-native/typescript-config/tsconfig.json"
+  "extends": "@react-native/typescript-config/tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      //redux store code
+      "@store": ["src/store"],
+      "@store/*": ["src/store/*"],
+      //components code
+      "@comp": ["src/comp"],
+      "@comp/*": ["src/comp/*"],
+      //util code
+      "@util": ["src/util"],
+      "@util/*": ["src/util/*"],
+      //native modules
+      "@native": ["src/native"],
+      "@native/*": ["src/native/*"],
+      //components code
+      "@src/*": ["src/*"],
+    }
+  },
+  "include": ["App.tsx", "src/**/*", "types/*.d.ts"]
 }

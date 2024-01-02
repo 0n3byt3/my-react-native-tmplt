@@ -10,6 +10,7 @@ import com.facebook.react.defaults.DefaultNewArchitectureEntryPoint.load
 import com.facebook.react.defaults.DefaultReactHost.getDefaultReactHost
 import com.facebook.react.defaults.DefaultReactNativeHost
 import com.facebook.react.flipper.ReactNativeFlipper
+import com.facebook.react.views.text.ReactFontManager;
 import com.facebook.soloader.SoLoader
 
 class MainApplication : Application(), ReactApplication {
@@ -35,6 +36,9 @@ class MainApplication : Application(), ReactApplication {
 
   override fun onCreate() {
     super.onCreate()
+    // And that line! Note that "iranyekanmobile" in R.font.iranyekanmobile must be the name of
+    // the XML file.
+    ReactFontManager.getInstance().addCustomFont(this, "IRANYekanMobile", R.font.iranyekanmobile)
     SoLoader.init(this, false)
     if (BuildConfig.IS_NEW_ARCHITECTURE_ENABLED) {
       // If you opted-in for the New Architecture, we load the native entry point for this app.
