@@ -1,0 +1,25 @@
+{
+  "name": "my-react-native-tmplt",
+  "version": "0.0.1",
+  "description": "my boilerplate react native template",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "template",
+    "template.config.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0n3byt3/my-react-native-tmplt.git"
+  },
+  "keywords": [
+    "react-native"
+  ],
+  "author": "0n3byt3",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/0n3byt3/my-react-native-tmplt/issues"
+  },
+  "homepage": "https://github.com/0n3byt3/my-react-native-tmplt#readme"
+}
